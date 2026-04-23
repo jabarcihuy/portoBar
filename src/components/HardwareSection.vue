@@ -26,14 +26,36 @@ const hardwareProjects = [
         '+-----------------------+',
       ],
     },
-    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="color: #5D6D7E; margin-bottom: 12px;">A nostalgia-driven hardware project that brings the classic virtual pet concept into the modern maker ecosystem. An ESP32 microcontroller drives an SSD1306 OLED display, rendering an animated creature with dynamic mood states driven by real sensor inputs.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-screwdriver-wrench" style="color: #D4A843; margin-right: 6px;"></i>Hardware Components</h4>
-      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>ESP32-WROOM-32 Development Board</li>
-        <li>SSD1306 128x64 OLED Display via I2C</li>
-        <li>Capacitive Touch Sensors on GPIO pins</li>
-        <li>Passive Buzzer for audio feedback</li>
+    longDescription: `<div class="text-left font-body">
+      <div class="bg-mustard/15 border-3 border-charcoal rounded-xl p-5 mb-6 shadow-brutal-sm relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 opacity-10">
+          <i class="fa-solid fa-paw text-8xl text-charcoal"></i>
+        </div>
+        <p class="text-charcoal leading-relaxed text-sm md:text-base relative z-10 font-medium">A nostalgia-driven hardware project that brings the classic virtual pet concept into the modern maker ecosystem. An ESP32 microcontroller drives an SSD1306 OLED display, rendering an animated creature with dynamic mood states driven by real sensor inputs.</p>
+      </div>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-screwdriver-wrench text-mustard"></i>
+        </div>
+        Hardware Components
+      </h4>
+      <ul class="space-y-3 mb-2">
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-microchip text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">ESP32-WROOM-32 Development Board</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-display text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">SSD1306 128x64 OLED Display via I2C</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-hand-pointer text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Capacitive Touch Sensors on GPIO pins</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-volume-high text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Passive Buzzer for audio feedback</span>
+        </li>
       </ul>
     </div>`,
   },
@@ -53,27 +75,49 @@ const hardwareProjects = [
         '  +========================+',
         '  |                        |',
         '  |  [GLV] Glove Sensors   |',
-        '  |    |                    |',
-        '  |    v                    |',
+        '  |    |                   |',
+        '  |    v                   |',
         '  |  [MCU] Arduino Nano    |',
         '  |    | Serial @ 115200   |',
-        '  |    v                    |',
+        '  |    v                   |',
         '  |  [ML]  Python Engine   |',
         '  |    | TFLite Model      |',
-        '  |    v                    |',
+        '  |    v                   |',
         '  |  [SPK] Speech Output   |',
         '  |                        |',
         '  +========================+',
       ],
     },
-    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="color: #5D6D7E; margin-bottom: 12px;">An end-to-end assistive technology pipeline designed to break communication barriers for the hearing-impaired community in Indonesia. The system captures hand gestures and translates them into audible speech within milliseconds.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-diagram-project" style="color: #7D9B76; margin-right: 6px;"></i>System Architecture</h4>
-      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>5 precision flex sensors mounted on a custom-fitted glove</li>
-        <li>Arduino Nano for real-time analog signal acquisition</li>
-        <li>Python backend running TFLite gesture classifier</li>
-        <li>pyttsx3 engine for natural text-to-speech output</li>
+    longDescription: `<div class="text-left font-body">
+      <div class="bg-sage/15 border-3 border-charcoal rounded-xl p-5 mb-6 shadow-brutal-sm relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 opacity-10">
+          <i class="fa-solid fa-hands-asl-interpreting text-8xl text-charcoal"></i>
+        </div>
+        <p class="text-charcoal leading-relaxed text-sm md:text-base relative z-10 font-medium">An end-to-end assistive technology pipeline designed to break communication barriers for the hearing-impaired community in Indonesia. The system captures hand gestures and translates them into audible speech within milliseconds.</p>
+      </div>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-diagram-project text-sage"></i>
+        </div>
+        System Architecture
+      </h4>
+      <ul class="space-y-3 mb-2">
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-hand text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">5 precision flex sensors mounted on a custom-fitted glove</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-microchip text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Arduino Nano for real-time analog signal acquisition</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-brands fa-python text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Python backend running TFLite gesture classifier</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-volume-high text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">pyttsx3 engine for natural text-to-speech output</span>
+        </li>
       </ul>
     </div>`,
   },
@@ -83,9 +127,16 @@ function showHardwareDetail(project) {
   Swal.fire({
     title: project.name,
     html: project.longDescription,
-    width: 560,
-    confirmButtonText: '<i class="fa-solid fa-check"></i> Cool!',
-    confirmButtonColor: project.accent === 'mustard' ? '#D4A843' : '#7D9B76',
+    width: 600,
+    confirmButtonText: '<span class="font-mono font-bold tracking-wider"><i class="fa-solid fa-check mr-2"></i>COOL!</span>',
+    buttonsStyling: false,
+    customClass: {
+      popup: 'border-3 border-charcoal rounded-xl shadow-brutal bg-cream',
+      title: 'font-heading font-extrabold text-charcoal text-2xl text-left pt-2 pb-4 border-b-3 border-charcoal',
+      htmlContainer: 'm-0 pt-4',
+      confirmButton: `mt-4 px-8 py-2.5 text-sm border-3 border-charcoal rounded-lg shadow-[4px_4px_0px_rgba(0,0,0,0.8)] font-mono font-bold text-white transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-[6px_6px_0px_rgba(0,0,0,0.8)] ${project.accent === 'mustard' ? 'bg-mustard' : 'bg-sage'}`
+    },
+    background: '#FEF9F2',
   })
 }
 </script>

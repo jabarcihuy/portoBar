@@ -17,17 +17,50 @@ const projects = [
     ],
     features: ['Real-time Scoring', 'Analytics Dashboard', 'Question Bank Management'],
     featureIcons: ['fa-solid fa-bolt', 'fa-solid fa-chart-line', 'fa-solid fa-database'],
-    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="margin-bottom: 12px; color: #5D6D7E;">JebolPTN is a high-performance UTBK simulation platform engineered to transform how Indonesian students prepare for university entrance exams. Every component is purpose-built for speed, accuracy, and actionable insight.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-crosshairs" style="color: #C0755A; margin-right: 6px;"></i>Key Features</h4>
-      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>5000+ expert-curated questions spanning TPS & TKA domains</li>
-        <li>Instant scoring with granular per-question analytics</li>
-        <li>Historical performance tracking with trend visualization</li>
-        <li>Redis-cached session management for sub-100ms response times</li>
+    longDescription: `<div class="text-left font-body">
+      <div class="bg-terracotta/15 border-3 border-charcoal rounded-xl p-5 mb-6 shadow-brutal-sm relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 opacity-10">
+          <i class="fa-solid fa-bullseye text-8xl text-charcoal"></i>
+        </div>
+        <p class="text-charcoal leading-relaxed text-sm md:text-base relative z-10 font-medium">JebolPTN is a high-performance UTBK simulation platform engineered to transform how Indonesian students prepare for university entrance exams. Every component is purpose-built for speed, accuracy, and actionable insight.</p>
+      </div>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-crosshairs text-terracotta"></i>
+        </div>
+        Key Features
+      </h4>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-terracotta hover:bg-terracotta/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-check text-terracotta"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">5000+ expert-curated questions spanning TPS & TKA domains</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-terracotta hover:bg-terracotta/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-bolt text-terracotta"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Instant scoring with granular per-question analytics</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-terracotta hover:bg-terracotta/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-chart-line text-terracotta"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Historical performance tracking with trend visualization</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-terracotta hover:bg-terracotta/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-server text-terracotta"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Redis-cached session management for sub-100ms response times</span>
+        </li>
       </ul>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-gears" style="color: #C0755A; margin-right: 6px;"></i>Tech Stack</h4>
-      <p style="color: #5D6D7E;">Laravel 10, PostgreSQL, Redis, Vue.js, REST API, JWT Authentication</p>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-gears text-terracotta"></i>
+        </div>
+        Tech Stack
+      </h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-terracotta/10 border-2 border-terracotta/40 text-terracotta rounded-md text-xs font-mono font-bold">Laravel 10</span>
+        <span class="px-3 py-1 bg-terracotta/10 border-2 border-terracotta/40 text-terracotta rounded-md text-xs font-mono font-bold">PostgreSQL</span>
+        <span class="px-3 py-1 bg-terracotta/10 border-2 border-terracotta/40 text-terracotta rounded-md text-xs font-mono font-bold">Redis</span>
+        <span class="px-3 py-1 bg-terracotta/10 border-2 border-terracotta/40 text-terracotta rounded-md text-xs font-mono font-bold">Vue.js</span>
+        <span class="px-3 py-1 bg-terracotta/10 border-2 border-terracotta/40 text-terracotta rounded-md text-xs font-mono font-bold">REST API</span>
+      </div>
     </div>`,
   },
   {
@@ -45,17 +78,50 @@ const projects = [
     ],
     features: ['Smart Scheduling', 'Task Tracker', 'Grade Analytics'],
     featureIcons: ['fa-solid fa-calendar-check', 'fa-solid fa-list-check', 'fa-solid fa-chart-pie'],
-    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="margin-bottom: 12px; color: #5D6D7E;">KelasKita reimagines how Indonesian university students manage their academic lives — replacing scattered notes and fragmented tools with one unified, intelligent platform built from the ground up for the university workflow.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-book-open" style="color: #7D9B76; margin-right: 6px;"></i>Key Features</h4>
-      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>Intelligent schedule conflict detection that prevents overlaps before they happen</li>
-        <li>Assignment deadline tracker with configurable push reminders</li>
-        <li>Grade analytics engine with semester GPA projection</li>
-        <li>Collaborative study group tools for peer-to-peer learning</li>
+    longDescription: `<div class="text-left font-body">
+      <div class="bg-sage/15 border-3 border-charcoal rounded-xl p-5 mb-6 shadow-brutal-sm relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 opacity-10">
+          <i class="fa-solid fa-graduation-cap text-8xl text-charcoal"></i>
+        </div>
+        <p class="text-charcoal leading-relaxed text-sm md:text-base relative z-10 font-medium">KelasKita reimagines how Indonesian university students manage their academic lives — replacing scattered notes and fragmented tools with one unified, intelligent platform built from the ground up for the university workflow.</p>
+      </div>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-book-open text-sage"></i>
+        </div>
+        Key Features
+      </h4>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-calendar-check text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Intelligent schedule conflict detection that prevents overlaps before they happen</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-list-check text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Assignment deadline tracker with configurable push reminders</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-chart-pie text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Grade analytics engine with semester GPA projection</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-sage hover:bg-sage/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-users text-sage"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium">Collaborative study group tools for peer-to-peer learning</span>
+        </li>
       </ul>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-gears" style="color: #7D9B76; margin-right: 6px;"></i>Tech Stack</h4>
-      <p style="color: #5D6D7E;">Vue 3, Express.js, PostgreSQL, Tailwind CSS, JWT + Refresh Token rotation</p>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-gears text-sage"></i>
+        </div>
+        Tech Stack
+      </h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-sage/10 border-2 border-sage/40 text-sage rounded-md text-xs font-mono font-bold">Vue 3</span>
+        <span class="px-3 py-1 bg-sage/10 border-2 border-sage/40 text-sage rounded-md text-xs font-mono font-bold">Express.js</span>
+        <span class="px-3 py-1 bg-sage/10 border-2 border-sage/40 text-sage rounded-md text-xs font-mono font-bold">PostgreSQL</span>
+        <span class="px-3 py-1 bg-sage/10 border-2 border-sage/40 text-sage rounded-md text-xs font-mono font-bold">Tailwind CSS</span>
+        <span class="px-3 py-1 bg-sage/10 border-2 border-sage/40 text-sage rounded-md text-xs font-mono font-bold">JWT</span>
+      </div>
     </div>`,
   },
   {
@@ -73,19 +139,45 @@ const projects = [
     ],
     features: ['Keyword Auto-Reply', 'Admin Commands', 'Group Support'],
     featureIcons: ['fa-solid fa-reply-all', 'fa-solid fa-user-shield', 'fa-solid fa-users'],
-    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="margin-bottom: 12px; color: #5D6D7E;">A zero-ui automation engine built on <strong>whatsapp-web.js</strong> — designed to intercept, parse, and respond to messages using smart keyword matching across private and group conversations simultaneously.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-rocket" style="color: #D4A843; margin-right: 6px;"></i>Key Features</h4>
-      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li><strong>Smart Auto-Reply:</strong> Dynamic response matching from <code>responses.json</code> with longest-keyword-first prioritization</li>
-        <li><strong>Admin Commands:</strong> Authorized users manage keyword-response pairs directly from WhatsApp — no deployment needed</li>
-        <li><strong>Group Chat Support:</strong> Seamlessly monitors and responds inside any WhatsApp group the bot is a member of</li>
+    longDescription: `<div class="text-left font-body">
+      <div class="bg-mustard/15 border-3 border-charcoal rounded-xl p-5 mb-6 shadow-brutal-sm relative overflow-hidden">
+        <div class="absolute -right-4 -top-4 opacity-10">
+          <i class="fa-brands fa-whatsapp text-8xl text-charcoal"></i>
+        </div>
+        <p class="text-charcoal leading-relaxed text-sm md:text-base relative z-10 font-medium">A zero-ui automation engine built on <strong class="font-bold border-b-2 border-mustard">whatsapp-web.js</strong> — designed to intercept, parse, and respond to messages using smart keyword matching across private and group conversations simultaneously.</p>
+      </div>
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-4 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-rocket text-mustard"></i>
+        </div>
+        Key Features
+      </h4>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-reply-all text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium"><strong class="text-charcoal font-bold">Smart Auto-Reply:</strong> Dynamic response matching from <code class="font-mono text-xs bg-mustard/20 px-1 py-0.5 border border-mustard rounded">responses.json</code> with longest-keyword-first prioritization</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-user-shield text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium"><strong class="text-charcoal font-bold">Admin Commands:</strong> Authorized users manage keyword-response pairs directly from WhatsApp — no deployment needed</span>
+        </li>
+        <li class="flex items-start gap-3 bg-cream p-3 rounded-lg border-2 border-charcoal/20 hover:border-mustard hover:bg-mustard/5 transition-colors">
+          <div class="mt-0.5"><i class="fa-solid fa-users text-mustard"></i></div>
+          <span class="text-charcoal-muted text-sm md:text-base font-medium"><strong class="text-charcoal font-bold">Group Chat Support:</strong> Seamlessly monitors and responds inside any WhatsApp group the bot is a member of</span>
+        </li>
       </ul>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-shield-halved" style="color: #D4A843; margin-right: 6px;"></i>Admin Capabilities</h4>
-      <p style="color: #5D6D7E; margin-bottom: 12px;">Product CRUD via chat: <code>admin addproduk</code>, <code>admin hapusproduk</code>, <code>admin listproduk</code>, and <code>admin whoami</code> for identity verification.</p>
-      <div style="margin-top: 16px;">
-        <a href="https://github.com/jabarcihuy/bot-wa" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #D4A843; font-weight: 600; text-decoration: none;">
-          <i class="fa-brands fa-github"></i> View Repository
+      <h4 class="font-heading font-extrabold text-charcoal text-lg mb-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-cream-dark border-3 border-charcoal flex items-center justify-center shadow-brutal-sm">
+          <i class="fa-solid fa-shield-halved text-mustard"></i>
+        </div>
+        Admin Capabilities
+      </h4>
+      <div class="bg-cream p-4 rounded-lg border-2 border-charcoal/20 mb-6">
+        <p class="text-charcoal-muted text-sm md:text-base font-medium leading-relaxed">Product CRUD via chat: <code class="font-mono text-xs bg-mustard/20 px-1 py-0.5 border border-mustard rounded">admin addproduk</code>, <code class="font-mono text-xs bg-mustard/20 px-1 py-0.5 border border-mustard rounded">admin hapusproduk</code>, <code class="font-mono text-xs bg-mustard/20 px-1 py-0.5 border border-mustard rounded">admin listproduk</code>, and <code class="font-mono text-xs bg-mustard/20 px-1 py-0.5 border border-mustard rounded">admin whoami</code> for identity verification.</p>
+      </div>
+      <div>
+        <a href="https://github.com/jabarcihuy/bot-wa" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-mustard border-3 border-charcoal rounded-lg shadow-brutal-sm text-charcoal font-bold text-sm hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all">
+          <i class="fa-brands fa-github text-lg"></i> View Repository
         </a>
       </div>
     </div>`,
@@ -94,16 +186,23 @@ const projects = [
 
 function showProjectDetail(project) {
   const accentColors = {
-    terracotta: '#C0755A',
-    sage: '#7D9B76',
-    mustard: '#D4A843',
+    terracotta: 'bg-terracotta',
+    sage: 'bg-sage',
+    mustard: 'bg-mustard',
   }
   Swal.fire({
-    title: `${project.name}`,
+    title: project.name,
     html: project.longDescription,
     width: 600,
-    confirmButtonText: '<i class="fa-solid fa-arrow-right"></i> Awesome!',
-    confirmButtonColor: accentColors[project.accent] || '#C0755A',
+    confirmButtonText: '<span class="font-mono font-bold tracking-wider"><i class="fa-solid fa-arrow-right mr-2"></i>AWESOME!</span>',
+    buttonsStyling: false,
+    customClass: {
+      popup: 'border-3 border-charcoal rounded-xl shadow-brutal bg-cream',
+      title: 'font-heading font-extrabold text-charcoal text-2xl text-left pt-2 pb-4 border-b-3 border-charcoal',
+      htmlContainer: 'm-0 pt-4',
+      confirmButton: `mt-4 px-8 py-2.5 text-sm border-3 border-charcoal rounded-lg shadow-[4px_4px_0px_rgba(0,0,0,0.8)] font-mono font-bold text-white transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none hover:-translate-y-0.5 hover:-translate-x-0.5 hover:shadow-[6px_6px_0px_rgba(0,0,0,0.8)] ${accentColors[project.accent] || 'bg-terracotta'} text-white`
+    },
+    background: '#FEF9F2',
     showClass: {
       popup: 'animate__animated animate__fadeInUp animate__faster',
     },
