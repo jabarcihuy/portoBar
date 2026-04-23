@@ -57,22 +57,22 @@ const contactMethods = [
   {
     icon: 'fa-brands fa-github',
     label: 'GitHub',
-    value: 'github.com/abdul',
-    href: '#',
+    value: 'github.com/jabarcihuy',
+    href: 'https://github.com/jabarcihuy',
     accent: 'charcoal',
   },
   {
     icon: 'fa-brands fa-linkedin-in',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/abdul',
+    value: 'Coming Soon',
     href: '#',
     accent: 'sage',
   },
   {
     icon: 'fa-solid fa-envelope',
     label: 'Email',
-    value: 'abdul@example.com',
-    href: 'mailto:abdul@example.com',
+    value: 'abduljabarbrngkl@gmail.com',
+    href: 'mailto:abduljabarbrngkl@gmail.com',
     accent: 'terracotta',
   },
 ]

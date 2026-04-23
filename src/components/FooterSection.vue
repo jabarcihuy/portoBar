@@ -11,10 +11,10 @@ const navLinks = [
 ]
 
 const socials = [
-  { icon: 'fa-brands fa-github', label: 'GitHub', href: '#' },
+  { icon: 'fa-brands fa-github', label: 'GitHub', href: 'https://github.com/jabarcihuy' },
   { icon: 'fa-brands fa-linkedin-in', label: 'LinkedIn', href: '#' },
   { icon: 'fa-brands fa-twitter', label: 'Twitter', href: '#' },
-  { icon: 'fa-solid fa-envelope', label: 'Email', href: 'mailto:abdul@example.com' },
+  { icon: 'fa-solid fa-envelope', label: 'Email', href: 'mailto:abduljabarbrngkl@gmail.com' },
 ]
 
 function scrollTo(id) {
