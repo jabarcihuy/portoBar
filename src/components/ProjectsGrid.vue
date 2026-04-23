@@ -7,7 +7,7 @@ const projects = [
     name: 'JebolPTN',
     tagline: 'UTBK Tryout Platform',
     description:
-      'A full-stack exam simulation platform for Indonesian university entrance preparation. Features real-time scoring, analytics dashboards, and thousands of curated questions across TPS & TKA categories.',
+      'Battle-tested exam simulation engine that arms students with 5000+ strategically curated questions, real-time performance analytics, and Redis-accelerated sessions — turning UTBK preparation from guesswork into a data-driven campaign.',
     tags: ['Laravel', 'PostgreSQL', 'REST API', 'Redis', 'Vue.js'],
     accent: 'terracotta',
     icon: 'fa-solid fa-bullseye',
@@ -18,15 +18,15 @@ const projects = [
     features: ['Real-time Scoring', 'Analytics Dashboard', 'Question Bank Management'],
     featureIcons: ['fa-solid fa-bolt', 'fa-solid fa-chart-line', 'fa-solid fa-database'],
     longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="margin-bottom: 12px; color: #5D6D7E;">JebolPTN is a comprehensive UTBK (Ujian Tulis Berbasis Komputer) simulation platform designed to help Indonesian high school students prepare for university entrance exams.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;">🎯 Key Features</h4>
+      <p style="margin-bottom: 12px; color: #5D6D7E;">JebolPTN is a high-performance UTBK simulation platform engineered to transform how Indonesian students prepare for university entrance exams. Every component is purpose-built for speed, accuracy, and actionable insight.</p>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-crosshairs" style="color: #C0755A; margin-right: 6px;"></i>Key Features</h4>
       <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>5000+ curated questions across TPS & TKA</li>
-        <li>Real-time scoring with detailed analytics</li>
-        <li>Performance tracking over time</li>
-        <li>Redis-cached session management</li>
+        <li>5000+ expert-curated questions spanning TPS & TKA domains</li>
+        <li>Instant scoring with granular per-question analytics</li>
+        <li>Historical performance tracking with trend visualization</li>
+        <li>Redis-cached session management for sub-100ms response times</li>
       </ul>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;">⚙️ Tech Stack</h4>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-gears" style="color: #C0755A; margin-right: 6px;"></i>Tech Stack</h4>
       <p style="color: #5D6D7E;">Laravel 10, PostgreSQL, Redis, Vue.js, REST API, JWT Authentication</p>
     </div>`,
   },
@@ -35,7 +35,7 @@ const projects = [
     name: 'KelasKita',
     tagline: 'Academic Scheduling & Task Management',
     description:
-      'Unified class management platform for university students. Handles scheduling, assignments, grade tracking, and collaborative study tools within an intuitive interface.',
+      'The command center for university life — an integrated platform that weaves together class scheduling, assignment tracking, and grade analytics into a single cohesive workflow, empowering students to own their academic trajectory.',
     tags: ['Vue 3', 'Express.js', 'PostgreSQL', 'Tailwind CSS', 'JWT Auth'],
     accent: 'sage',
     icon: 'fa-solid fa-graduation-cap',
@@ -46,27 +46,64 @@ const projects = [
     features: ['Smart Scheduling', 'Task Tracker', 'Grade Analytics'],
     featureIcons: ['fa-solid fa-calendar-check', 'fa-solid fa-list-check', 'fa-solid fa-chart-pie'],
     longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="margin-bottom: 12px; color: #5D6D7E;">KelasKita is an all-in-one academic management platform designed for Indonesian university students to streamline their daily academic workflow.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;">📚 Key Features</h4>
+      <p style="margin-bottom: 12px; color: #5D6D7E;">KelasKita reimagines how Indonesian university students manage their academic lives — replacing scattered notes and fragmented tools with one unified, intelligent platform built from the ground up for the university workflow.</p>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-book-open" style="color: #7D9B76; margin-right: 6px;"></i>Key Features</h4>
       <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>Automatic schedule conflict detection</li>
-        <li>Assignment deadline tracker with reminders</li>
-        <li>Grade analytics with GPA projection</li>
-        <li>Collaborative study group tools</li>
+        <li>Intelligent schedule conflict detection that prevents overlaps before they happen</li>
+        <li>Assignment deadline tracker with configurable push reminders</li>
+        <li>Grade analytics engine with semester GPA projection</li>
+        <li>Collaborative study group tools for peer-to-peer learning</li>
       </ul>
-      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;">⚙️ Tech Stack</h4>
-      <p style="color: #5D6D7E;">Vue 3, Express.js, PostgreSQL, Tailwind CSS, JWT + Refresh Tokens</p>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-gears" style="color: #7D9B76; margin-right: 6px;"></i>Tech Stack</h4>
+      <p style="color: #5D6D7E;">Vue 3, Express.js, PostgreSQL, Tailwind CSS, JWT + Refresh Token rotation</p>
+    </div>`,
+  },
+  {
+    id: 'bot-wa',
+    name: 'WhatsApp Keyword Bot',
+    tagline: 'Auto-Reply & Product Manager Bot',
+    description:
+      'A lightweight conversational automation layer for WhatsApp — matches incoming messages against configurable keyword rules and fires instant replies, with a built-in admin CLI for managing product catalogs without ever touching the codebase.',
+    tags: ['Node.js', 'whatsapp-web.js', 'JSON DB', 'QR Auth'],
+    accent: 'mustard',
+    icon: 'fa-brands fa-whatsapp',
+    stats: [
+      { label: 'Setup', value: 'QR Code', icon: 'fa-solid fa-qrcode' },
+      { label: 'Config', value: 'JSON', icon: 'fa-solid fa-file-code' },
+    ],
+    features: ['Keyword Auto-Reply', 'Admin Commands', 'Group Support'],
+    featureIcons: ['fa-solid fa-reply-all', 'fa-solid fa-user-shield', 'fa-solid fa-users'],
+    longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
+      <p style="margin-bottom: 12px; color: #5D6D7E;">A zero-ui automation engine built on <strong>whatsapp-web.js</strong> — designed to intercept, parse, and respond to messages using smart keyword matching across private and group conversations simultaneously.</p>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-rocket" style="color: #D4A843; margin-right: 6px;"></i>Key Features</h4>
+      <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
+        <li><strong>Smart Auto-Reply:</strong> Dynamic response matching from <code>responses.json</code> with longest-keyword-first prioritization</li>
+        <li><strong>Admin Commands:</strong> Authorized users manage keyword-response pairs directly from WhatsApp — no deployment needed</li>
+        <li><strong>Group Chat Support:</strong> Seamlessly monitors and responds inside any WhatsApp group the bot is a member of</li>
+      </ul>
+      <h4 style="font-family: 'Plus Jakarta Sans', sans-serif; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-shield-halved" style="color: #D4A843; margin-right: 6px;"></i>Admin Capabilities</h4>
+      <p style="color: #5D6D7E; margin-bottom: 12px;">Product CRUD via chat: <code>admin addproduk</code>, <code>admin hapusproduk</code>, <code>admin listproduk</code>, and <code>admin whoami</code> for identity verification.</p>
+      <div style="margin-top: 16px;">
+        <a href="https://github.com/jabarcihuy/bot-wa" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #D4A843; font-weight: 600; text-decoration: none;">
+          <i class="fa-brands fa-github"></i> View Repository
+        </a>
+      </div>
     </div>`,
   },
 ]
 
 function showProjectDetail(project) {
+  const accentColors = {
+    terracotta: '#C0755A',
+    sage: '#7D9B76',
+    mustard: '#D4A843',
+  }
   Swal.fire({
     title: `${project.name}`,
     html: project.longDescription,
     width: 600,
     confirmButtonText: '<i class="fa-solid fa-arrow-right"></i> Awesome!',
-    confirmButtonColor: project.accent === 'terracotta' ? '#C0755A' : '#7D9B76',
+    confirmButtonColor: accentColors[project.accent] || '#C0755A',
     showClass: {
       popup: 'animate__animated animate__fadeInUp animate__faster',
     },
@@ -105,7 +142,9 @@ function showProjectDetail(project) {
             'group bg-cream border-3 rounded-xl p-6 sm:p-8 transition-all duration-200 cursor-pointer relative overflow-hidden',
             project.accent === 'terracotta'
               ? 'border-terracotta shadow-brutal-terracotta hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_var(--color-terracotta)]'
-              : 'border-sage shadow-brutal-sage hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_var(--color-sage)]',
+              : project.accent === 'sage'
+                ? 'border-sage shadow-brutal-sage hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_var(--color-sage)]'
+                : 'border-mustard shadow-brutal-mustard hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_var(--color-mustard)]',
           ]"
           @click="showProjectDetail(project)"
         >
@@ -118,7 +157,7 @@ function showProjectDetail(project) {
               <div
                 :class="[
                   'w-13 h-13 sm:w-14 sm:h-14 border-3 rounded-xl flex items-center justify-center text-xl shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3',
-                  project.accent === 'terracotta' ? 'bg-terracotta/10 border-terracotta text-terracotta' : 'bg-sage/10 border-sage text-sage',
+                  `bg-${project.accent}/10 border-${project.accent} text-${project.accent}`,
                 ]"
               >
                 <i :class="project.icon"></i>
@@ -131,7 +170,7 @@ function showProjectDetail(project) {
                 <p
                   :class="[
                     'font-mono text-xs sm:text-sm font-medium',
-                    project.accent === 'terracotta' ? 'text-terracotta' : 'text-sage',
+                    `text-${project.accent}`,
                   ]"
                 >
                   {{ project.tagline }}
@@ -167,9 +206,7 @@ function showProjectDetail(project) {
               :key="feature"
               :class="[
                 'flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-body font-medium transition-all duration-200 hover:scale-105',
-                project.accent === 'terracotta'
-                  ? 'bg-terracotta/8 border-terracotta/30 text-terracotta'
-                  : 'bg-sage/8 border-sage/30 text-sage',
+                `bg-${project.accent}/8 border-${project.accent}/30 text-${project.accent}`,
               ]"
             >
               <i :class="[project.featureIcons[fi], 'text-xs']"></i>

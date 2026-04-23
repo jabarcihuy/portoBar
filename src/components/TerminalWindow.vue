@@ -38,7 +38,7 @@ const logLines = [
   { type: 'log', prefix: '[2026-04-23 06:15:02]', level: 'WARN', text: '  Rate limiter: 100 req/min per IP' },
   { type: 'log', prefix: '[2026-04-23 06:15:03]', level: 'INFO', text: '  Auth middleware initialized (JWT + Refresh Token)' },
   { type: 'log', prefix: '[2026-04-23 06:15:03]', level: 'INFO', text: '  CORS whitelist: [app.jebolptn.com]' },
-  { type: 'log', prefix: '[2026-04-23 06:15:04]', level: 'OK', text: '    All systems operational ✓' },
+  { type: 'log', prefix: '[2026-04-23 06:15:04]', level: 'OK', text: '    All systems operational [OK]' },
 ]
 
 function startTyping() {

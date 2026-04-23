@@ -6,34 +6,34 @@ const hardwareProjects = [
     id: 'virtual-pet',
     name: 'ESP32 Virtual Pet',
     description:
-      'An interactive virtual pet running on an ESP32 microcontroller with an OLED display. Features hunger, happiness, and health meters with real sensor inputs for touch-based interaction.',
+      'A Tamagotchi-inspired companion living inside an ESP32 microcontroller — complete with mood states, health meters, and capacitive touch interaction rendered in real-time on a 128x64 OLED display.',
     tags: ['ESP32', 'C++', 'OLED SSD1306', 'Sensors', 'PlatformIO'],
     tagIcons: ['fa-solid fa-microchip', 'fa-solid fa-code', 'fa-solid fa-display', 'fa-solid fa-satellite-dish', 'fa-solid fa-wrench'],
     icon: 'fa-solid fa-paw',
     accent: 'mustard',
     visual: {
       lines: [
-        '┌──────────────────────┐',
-        '│   ESP32-WROOM-32     │',
-        '│  ┌─────────────────┐ │',
-        '│  │  ╭───╮  ♥ ♥ ♥  │ │',
-        '│  │  │ o.o│  HP: 95 │ │',
-        '│  │  │ ᴗ  │  ★★★★☆ │ │',
-        '│  │  ╰───╯  HAPPY!  │ │',
-        '│  └─────────────────┘ │',
-        '│  GPIO 21 ──► SDA     │',
-        '│  GPIO 22 ──► SCL     │',
-        '└──────────────────────┘',
+        '+-----------------------+',
+        '|   ESP32-WROOM-32      |',
+        '|  +------------------+ |',
+        '|  |  .---.  <3 <3 <3 | |',
+        '|  |  | o.o|  HP: 95  | |',
+        '|  |  | u  |  LV: 4/5 | |',
+        '|  |  \'---\'  HAPPY!   | |',
+        '|  +------------------+ |',
+        '|  GPIO 21 --> SDA      |',
+        '|  GPIO 22 --> SCL      |',
+        '+-----------------------+',
       ],
     },
     longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="color: #5D6D7E; margin-bottom: 12px;">A nostalgic Tamagotchi-inspired virtual pet running on real hardware. The ESP32 drives an SSD1306 OLED display showing an animated pet with multiple mood states.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;">🔧 Hardware Components</h4>
+      <p style="color: #5D6D7E; margin-bottom: 12px;">A nostalgia-driven hardware project that brings the classic virtual pet concept into the modern maker ecosystem. An ESP32 microcontroller drives an SSD1306 OLED display, rendering an animated creature with dynamic mood states driven by real sensor inputs.</p>
+      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-screwdriver-wrench" style="color: #D4A843; margin-right: 6px;"></i>Hardware Components</h4>
       <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>ESP32-WROOM-32 Dev Board</li>
-        <li>SSD1306 128x64 OLED Display (I2C)</li>
-        <li>Capacitive Touch Sensors (GPIO)</li>
-        <li>Passive Buzzer for sound effects</li>
+        <li>ESP32-WROOM-32 Development Board</li>
+        <li>SSD1306 128x64 OLED Display via I2C</li>
+        <li>Capacitive Touch Sensors on GPIO pins</li>
+        <li>Passive Buzzer for audio feedback</li>
       </ul>
     </div>`,
   },
@@ -41,39 +41,39 @@ const hardwareProjects = [
     id: 'sign-to-speech',
     name: 'Sign-to-Speech Translator',
     description:
-      'A computer vision system that translates Indonesian Sign Language (BISINDO) to audible speech in real-time. Uses flex sensors on a glove connected to an Arduino, with a Python ML backend.',
+      'An assistive technology pipeline that captures Indonesian Sign Language (BISINDO) gestures through a flex-sensor glove, feeds readings into a TensorFlow Lite classifier, and outputs spoken words in real-time — bridging the communication gap for the hearing-impaired.',
     tags: ['Arduino', 'Python', 'TensorFlow Lite', 'Flex Sensors', 'Serial'],
     tagIcons: ['fa-solid fa-microchip', 'fa-brands fa-python', 'fa-solid fa-brain', 'fa-solid fa-hand', 'fa-solid fa-plug'],
     icon: 'fa-solid fa-hands-asl-interpreting',
     accent: 'sage',
     visual: {
       lines: [
-        '  ╔═══════════════════════╗',
-        '  ║   SIGN-TO-SPEECH v2   ║',
-        '  ╠═══════════════════════╣',
-        '  ║                       ║',
-        '  ║  🧤 Glove Sensors     ║',
-        '  ║    │                   ║',
-        '  ║    ▼                   ║',
-        '  ║  📡 Arduino Nano      ║',
-        '  ║    │ Serial @ 115200   ║',
-        '  ║    ▼                   ║',
-        '  ║  🐍 Python ML Engine  ║',
-        '  ║    │ TFLite Model      ║',
-        '  ║    ▼                   ║',
-        '  ║  🔊 Speech Output     ║',
-        '  ║                       ║',
-        '  ╚═══════════════════════╝',
+        '  +========================+',
+        '  |   SIGN-TO-SPEECH v2    |',
+        '  +========================+',
+        '  |                        |',
+        '  |  [GLV] Glove Sensors   |',
+        '  |    |                    |',
+        '  |    v                    |',
+        '  |  [MCU] Arduino Nano    |',
+        '  |    | Serial @ 115200   |',
+        '  |    v                    |',
+        '  |  [ML]  Python Engine   |',
+        '  |    | TFLite Model      |',
+        '  |    v                    |',
+        '  |  [SPK] Speech Output   |',
+        '  |                        |',
+        '  +========================+',
       ],
     },
     longDescription: `<div style="text-align: left; font-family: 'Inter', sans-serif;">
-      <p style="color: #5D6D7E; margin-bottom: 12px;">An assistive technology project bridging communication gaps for the hearing-impaired community in Indonesia by translating BISINDO gestures to spoken words.</p>
-      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;">🔧 System Architecture</h4>
+      <p style="color: #5D6D7E; margin-bottom: 12px;">An end-to-end assistive technology pipeline designed to break communication barriers for the hearing-impaired community in Indonesia. The system captures hand gestures and translates them into audible speech within milliseconds.</p>
+      <h4 style="font-family: 'Plus Jakarta Sans'; color: #2C3E50; margin-bottom: 8px;"><i class="fa-solid fa-diagram-project" style="color: #7D9B76; margin-right: 6px;"></i>System Architecture</h4>
       <ul style="color: #5D6D7E; padding-left: 20px; margin-bottom: 12px;">
-        <li>5 flex sensors on a custom glove</li>
-        <li>Arduino Nano for analog reading</li>
-        <li>Python backend with TFLite classifier</li>
-        <li>pyttsx3 for text-to-speech output</li>
+        <li>5 precision flex sensors mounted on a custom-fitted glove</li>
+        <li>Arduino Nano for real-time analog signal acquisition</li>
+        <li>Python backend running TFLite gesture classifier</li>
+        <li>pyttsx3 engine for natural text-to-speech output</li>
       </ul>
     </div>`,
   },

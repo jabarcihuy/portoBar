@@ -79,7 +79,7 @@ const stats = [
           <h1
             :class="['font-heading font-extrabold text-charcoal leading-[0.95] mb-4 md:mb-6 text-5xl sm:text-6xl md:text-7xl lg:text-8xl transition-all duration-700', isVisible ? 'animate-fade-in-up delay-100' : 'opacity-0']"
           >
-            I'm <span class="text-terracotta relative">Abdul<span class="absolute -top-2 -right-4 md:-right-6 text-lg md:text-2xl animate-orbit">✦</span></span><span class="text-mustard">.</span>
+            I'm <span class="text-terracotta relative">Abdul<span class="absolute -top-2 -right-4 md:-right-6 text-lg md:text-2xl animate-orbit"><i class="fa-solid fa-sparkle text-mustard text-sm"></i></span></span><span class="text-mustard">.</span>
           </h1>
 
           <!-- Typed role -->
